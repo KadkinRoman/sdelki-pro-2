@@ -1,86 +1,17 @@
-@font-face {
-  font-family: "Geometria";
-  src: url("../../fonts/Geometria-Regular.eot");
-  src: local("Geometria Regular"), local("Geometria-Regular"), url("/src/fonts/Geometria-Regular.eot#iefix") format("embedded-opentype"), url("/src/fonts/Geometria-Regular.woff") format("woff"), url("/src/fonts/Geometria-Regular.woff2") format("woff2"), url("/src/fonts/Geometria-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Geometria";
-  src: url("../../fonts/Geometria-Bold.eot");
-  src: local("Geometria Bold"), local("Geometria-Bold"), url("/src/fonts/Geometria-Bold.eot#iefix") format("embedded-opentype"), url("/src/fonts/Geometria-Bold.woff") format("woff"), url("/src/fonts/Geometria-Bold.woff2") format("woff2"), url("/src/fonts/Geometria-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Geometria";
-  src: url("../../fonts/Geometria-ExtraBold.eot");
-  src: local("Geometria Regular"), local("Geometria-Regular"), url("/src/fonts/Geometria-ExtraBold.eot#iefix") format("embedded-opentype"), url("/src/fonts/Geometria-ExtraBold.woff") format("woff"), url("/src/fonts/Geometria-ExtraBold.woff2") format("woff2"), url("/src/fonts/Geometria-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-h1 {
-  font-size: 2.4rem;
-  line-height: 154%;
-  font-weight: 700;
-  font-style: normal;
-}
+/* Error: expected ";".
+ *   ,
+ * 9 | @import "components/first-screen"
+ *   |                                  ^
+ *   '
+ *   src\sass\style.scss 9:34  root stylesheet */
 
-h2 {
-  font-size: 3.3rem;
-  line-height: 154%;
-  font-weight: 800;
-  font-style: normal;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ";".\a   \2577 \a 9 \2502  @import "components/first-screen"\d\a   \2502                                   ^\a   \2575 \a   src\\sass\\style.scss 9:34  root stylesheet';
 }
-
-h3 {
-  font-size: 1.6rem;
-  line-height: 131%;
-  font-weight: 400;
-  font-style: normal;
-}
-
-h4 {
-  font-size: 0.8px;
-  line-height: 120%;
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Geometria";
-  src: url("../../fonts/Geometria-Regular.eot");
-  src: local("Geometria Regular"), local("Geometria-Regular"), url("/src/fonts/Geometria-Regular.eot#iefix") format("embedded-opentype"), url("/src/fonts/Geometria-Regular.woff") format("woff"), url("/src/fonts/Geometria-Regular.woff2") format("woff2"), url("/src/fonts/Geometria-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Geometria";
-  src: url("../../fonts/Geometria-Bold.eot");
-  src: local("Geometria Bold"), local("Geometria-Bold"), url("/src/fonts/Geometria-Bold.eot#iefix") format("embedded-opentype"), url("/src/fonts/Geometria-Bold.woff") format("woff"), url("/src/fonts/Geometria-Bold.woff2") format("woff2"), url("/src/fonts/Geometria-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 10px;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: Geometria, Verdana, sans-serif;
-}
-
-.container {
-  max-width: 1180px;
-  margin: auto;
-}
-
-.main {
-  background-color: #f6f6f6;
-}
-
-/*# sourceMappingURL=style.css.map */

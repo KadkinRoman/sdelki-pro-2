@@ -1,7 +1,12 @@
+@import "../../node_modules/normalize-scss/sass/normalize";
+@include normalize();
+
 @import "abstract/constants";
 
 @import "base/typography";
 @import "base/base";
+
+@import "components/first-screen"
 
 @import "layouts/container";
 @import "layouts/header";
