@@ -1,9 +1,8 @@
 .first-screen {
   height: 100vh;
   position: relative;
-  background: url("/src/image/first-screen/background.jpg") 50% / cover
-    no-repeat;
-  // background-size: 100%;
+  background: url("/src/image/first-screen/background.jpg") 50% / cover no-repeat;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -20,7 +19,7 @@
   &__container {
     position: relative;
     z-index: 1;
-    padding: 290px 0px;
+    padding: 290px 0 80px;
 
     display: flex;
     flex-direction: column;
@@ -49,16 +48,9 @@
     margin: 0 auto;
     display: inline-block;
     text-transform: uppercase;
-    transition: all 0.3s ease;
-    background-color: $color-primary;
-    padding: 17px 21px;
     color: $color-light;
+    font-size: 2.2rem;
     font-weight: 700;
-    border-radius: 3px;
-  }
-
-  &__link:hover {
-    background-color: $color-primary-darker;
   }
 
   &__link::after {

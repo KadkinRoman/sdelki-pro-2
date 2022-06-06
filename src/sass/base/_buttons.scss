@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  background-color: $color-button;
+  padding: 16px 16px;
+  border-radius: 3px;
+}
+
+.button:hover {
+  background-color: $color-button-darker;
+}
+
+.button--dark{
+  background-color: $color-button-second;
+}
+
+.button--dark:hover {
+  background-color: $color-button-second-darker;
+}

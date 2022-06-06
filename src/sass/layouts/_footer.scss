@@ -1,0 +1,64 @@
+.footer {
+  background-color: $color-footer;
+  color: $color-text-light;
+  
+  // .footer__container
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 64px 0;
+  }
+
+  &__container > *:not(:last-child) {
+    margin-right: 123px;
+  }
+
+  // .footer__contacts
+
+  &__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__contacts > *:not(:last-child) {
+    margin-right: 123px;
+  }
+
+  // .footer__address
+
+  &__address {
+  }
+
+  // .footer__link
+
+  &__link {
+  }
+
+  // .footer__title
+
+  &__title {
+  }
+
+  // .footer__text
+
+  &__text {
+    
+  }
+
+  // .footer__phone
+
+  &__phone {
+  }
+
+  // .footer__social
+
+  &__social {
+  }
+}
+
+

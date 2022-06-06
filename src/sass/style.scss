@@ -5,11 +5,19 @@
 
 @import "base/base";
 @import "base/typography";
+@import "base/logo";
+@import "base/social";
+@import "base/buttons";
 
 @import "components/first-screen";
+@import "components/offers";
+@import "components/mortgage";
+@import "components/video";
+@import "components/questions";
 
-@import "layouts/_wrapper";
+@import "layouts/wrapper";
 @import "layouts/container";
 @import "layouts/header";
 @import "layouts/main";
+@import "layouts/footer";
 

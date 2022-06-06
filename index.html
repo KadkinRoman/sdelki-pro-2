@@ -1,127 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="src/image/icon/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Сделки.PRO</title>
+    <link rel="stylesheet" href="src/sass/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="src/image/icon/favicon.png" type="image/x-icon">
-  <title>Сделки.PRO</title>
-  <link rel="stylesheet" href="src/sass/style.css">
-</head>
-
-<body>
-
-  <div class="wrapper">
-
-    <header class="header">
-
-      <div class="container header__container">
-        <a href="#" class="logo">
-          <img class="logo__img" src="src/image/logo.svg" alt="logo">
-        </a>
-        <div class="header__contacts">
-          <ul class="social">
-            <li class="social__item">
-              <a class="social__link" href="error">
-                <img class="social__img" src="src/image/icon/vk.svg" alt="vkontakte">
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header__container">
+          <a href="#" class="logo">
+            <img class="logo__img" src="src/image/logo.svg" alt="logo" />
+          </a>
+          <div class="header__contacts">
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="error">
+                  <img
+                    class="social__img"
+                    src="src/image/icon/vk.svg"
+                    alt="vkontakte"
+                  />
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="error">
+                  <img
+                    class="social__img"
+                    src="src/image/icon/insta.svg"
+                    alt="instagram"
+                  />
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="error">
+                  <img
+                    class="social__img"
+                    src="src/image/icon/telega.svg"
+                    alt="telegram"
+                  />
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="error">
+                  <img
+                    class="social__img"
+                    src="src/image/icon/ok.svg"
+                    alt="odnoklassniki"
+                  />
+                </a>
+              </li>
+            </ul>
+            <div class="header__phone phone-header">
+              <a class="phone-header__link" href="error">
+                <span class="phone-header__icon"></span>
+                <p class="phone-header__number">+7(966) 288 24 24</p>
               </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="error">
-                <img class="social__img" src="src/image/icon/insta.svg" alt="instagram">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="error">
-                <img class="social__img" src="src/image/icon/telega.svg" alt="telegram">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="error">
-                <img class="social__img" src="src/image/icon/ok.svg" alt="odnoklassniki">
-              </a>
-            </li>
-          </ul>
-          <div class="header__phone phone-header">
-            <a class="phone-header__link" href="error">
-              <span class="phone-header__icon"></span>
-              <p class="phone-header__number">+7(966) 288 24 24</p>
-            </a>
+            </div>
           </div>
         </div>
-      </div>
+      </header>
 
-    </header>
+      <main class="main">
+        <section class="first-screen">
+          <div class="container">
+            <div class="first-screen__container">
+              <h1 class="first-screen__title">
+                Новостройки Владивостока от застройщиков
+              </h1>
+              <a class="first-screen__link button" href="error"
+                >Подобрать квартиру</a
+              >
+            </div>
+          </div>
+        </section>
 
-    <main class="main">
+        <section class="offers">
+          <div class="container">
+            <div class="offers__container">
+              <h3 class="offers__title">Лучшие предложения месяца</h3>
 
-      <section class="first-screen">
-        <div class="container first-screen__container">
-          <h1 class="first-screen__title">Новостройки Владивостока от застройщиков</h1>
-          <a class="first-screen__link" href="error">Подобрать квартиру</a>
-        </div>
-      </section>
+              <div class="offers__content">
+                <div class="slider">
+                  <div class="slider__wrapper">
+                    <div class="slider__items">
+                      <div class="slider__item">
+                        <article class="card">
+                          <div class="card__header">
+                            <img
+                              class="card__img"
+                              src="/src/image/offers/img1.jpg"
+                              alt=""
+                            />
+                            <div class="card__header-content">
+                              <p class="card__header-title">
+                                ЖК &#171;Новый Шилкинский&#187;
+                              </p>
+                              <p class="card__header-subtitle">
+                                3-я Рабочая, ул. Шилкинская, 34
+                              </p>
+                            </div>
+                          </div>
 
-      <section class="offers">
-        <div class="container offers__container">
-          <h3 class="offers__title">
-            Лучшие предложения месяца
-          </h3>
-          
-          <div class="offers__content">
-
-            <div class="slider">
-              <div class="slider__wrapper">
-                <div class="slider__items">
-                  <div class="slider__item">
-                    <article class="card">
-                      <div class="card__header header-card">
-                        <img class="header-card__img" src="" alt="">
-                        <p class="header-card__title">ЖК  	&#171;Новый Шилкинский&#187;</p>
-                        <p class="header-card__subtitle">3-я Рабочая, ул. Шилкинская, 34</p>
+                          <div class="card__footer">
+                            <p class="card__footer-title">
+                              от
+                              <span class="card__footer-price"
+                                >8 616 000 &#8381;</span
+                              >
+                            </p>
+                            <p class="card__subtitle">
+                              Срок сдачи 3 квартала 2024 г.
+                            </p>
+                          </div>
+                        </article>
                       </div>
-                      <div class="footer-card">
-                        <p class="footer-card__title">
-                          от <span class="footer-card__price">8 616 000 &#8381;</span>
-                        </p>
-                        <p class="footer-card__subtitle">Срок сдачи 3 квартала 2024 г.</p>
+                      <div class="slider__item">
+                        <article class="card">
+                          <div class="card__header">
+                            <img
+                              class="card__img"
+                              src="/src/image/offers/img1.jpg"
+                              alt=""
+                            />
+                            <div class="card__header-content">
+                              <p class="card__header-title">
+                                ЖК &#171;Новый Шилкинский&#187;
+                              </p>
+                              <p class="card__header-subtitle">
+                                3-я Рабочая, ул. Шилкинская, 34
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="card__footer">
+                            <p class="card__footer-title">
+                              от
+                              <span class="card__footer-price"
+                                >8 616 000 &#8381;</span
+                              >
+                            </p>
+                            <p class="card__subtitle">
+                              Срок сдачи 3 квартала 2024 г.
+                            </p>
+                          </div>
+                        </article>
                       </div>
-                      
-                    </article>
-                    1
+                      <div class="slider__item">
+                        <article class="card">
+                          <div class="card__header">
+                            <img
+                              class="card__img"
+                              src="/src/image/offers/img1.jpg"
+                              alt=""
+                            />
+                            <div class="card__header-content">
+                              <p class="card__header-title">
+                                ЖК &#171;Новый Шилкинский&#187;
+                              </p>
+                              <p class="card__header-subtitle">
+                                3-я Рабочая, ул. Шилкинская, 34
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="card__footer">
+                            <p class="card__footer-title">
+                              от
+                              <span class="card__footer-price"
+                                >8 616 000 &#8381;</span
+                              >
+                            </p>
+                            <p class="card__subtitle">
+                              Срок сдачи 3 квартала 2024 г.
+                            </p>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="slider__item">
+                        <article class="card">
+                          <div class="card__header">
+                            <img
+                              class="card__img"
+                              src="/src/image/offers/img1.jpg"
+                              alt=""
+                            />
+                            <div class="card__header-content">
+                              <p class="card__header-title">
+                                ЖК &#171;Новый Шилкинский&#187;
+                              </p>
+                              <p class="card__header-subtitle">
+                                3-я Рабочая, ул. Шилкинская, 34
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="card__footer">
+                            <p class="card__footer-title">
+                              от
+                              <span class="card__footer-price"
+                                >8 616 000 &#8381;</span
+                              >
+                            </p>
+                            <p class="card__subtitle">
+                              Срок сдачи 3 квартала 2024 г.
+                            </p>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="slider__item">
+                        <article class="card">
+                          <div class="card__header">
+                            <img
+                              class="card__img"
+                              src="/src/image/offers/img1.jpg"
+                              alt=""
+                            />
+                            <div class="card__header-content">
+                              <p class="card__header-title">
+                                ЖК &#171;Новый Шилкинский&#187;
+                              </p>
+                              <p class="card__header-subtitle">
+                                3-я Рабочая, ул. Шилкинская, 34
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="card__footer">
+                            <p class="card__footer-title">
+                              от
+                              <span class="card__footer-price"
+                                >8 616 000 &#8381;</span
+                              >
+                            </p>
+                            <p class="card__subtitle">
+                              Срок сдачи 3 квартала 2024 г.
+                            </p>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="slider__item">
+                        <article class="card">
+                          <div class="card__header">
+                            <img
+                              class="card__img"
+                              src="/src/image/offers/img1.jpg"
+                              alt=""
+                            />
+                            <div class="card__header-content">
+                              <p class="card__header-title">
+                                ЖК &#171;Новый Шилкинский&#187;
+                              </p>
+                              <p class="card__header-subtitle">
+                                3-я Рабочая, ул. Шилкинская, 34
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="card__footer">
+                            <p class="card__footer-title">
+                              от
+                              <span class="card__footer-price"
+                                >8 616 000 &#8381;</span
+                              >
+                            </p>
+                            <p class="card__subtitle">
+                              Срок сдачи 3 квартала 2024 г.
+                            </p>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
                   </div>
-                  <div class="slider__item">
-                    <!-- Контент 2 слайда -->
-                    2
-                  </div>
-                  <div class="slider__item">
-                    <!-- Контент 3 слайда -->
-                    3
-                  </div>
-                  <div class="slider__item">
-                    <!-- Контент 4 слайда -->
-                    4
-                  </div>
-                  <div class="slider__item">
-                    <!-- Контент 5 слайда -->
-                    5
-                  </div>
+                  <a href="#" class="slider__control" data-slide="prev"></a>
+                  <a href="#" class="slider__control" data-slide="next"></a>
                 </div>
               </div>
-              <a href="#" class="slider__control" data-slide="prev"></a>
-              <a href="#" class="slider__control" data-slide="next"></a>
+
+              <div class="offers__buttons">
+                <a class="button" href="">Записаться на просмотр</a>
+                <a class="button offers__button button--dark" href="">
+                  <span class="catalog-icon"></span>
+                  <p>Скачать полный каталог</p>
+                </a>
+              </div>
             </div>
-        
+          </div>
+        </section>
+
+        <section class="mortgage">
+          <div class="container">
+            <div class="mortgage__container">
+              <div class="mortgage__content">
+                <h2 class="mortgage__title">Ипотека от 0,01% на новостройки</h2>
+                <a class="mortgage__button button" href=""
+                  >Оставить заявку на расчёт</a
+                >
+              </div>
+              <ul class="mortgage__banks banks">
+                <li class="banks__item">
+                  <a href="" class="banks__link banks__link--sber"></a>
+                </li>
+                <li class="banks__item">
+                  <a href="" class="banks__link banks__link--vtb"></a>
+                </li>
+                <li class="banks__item">
+                  <a href="" class="banks__link banks__link--alfa"></a>
+                </li>
+                <li class="banks__item">
+                  <a href="" class="banks__link banks__link--domrf"></a>
+                </li>
+                <li class="banks__item">
+                  <a href="" class="banks__link banks__link--rshb"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="video">
+          <div class="container">
+            <div class="video__container">
+              <h3 class="video__title">Видео о нас</h3>
+
+              <div class="video__wrapper">
+                <iframe
+                  class="video__content"
+                  src="https://www.youtube.com/embed/JDX1ReQNfd0?start=1"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="questions">
+          <div class="container">
+            <div class="questions__container">
+              <div class="questions__content">
+                <h2 class="questions__title">У вас есть вопросы?</h2>
+                <p class="questions__subtitle">
+                  Мы готовы перезвонить вам в ближайшее время и ответить на них
+                </p>
+
+                <form class="form" action="">
+                  <div class="form__content">
+                    <input
+                      class="form__input form__input--name"
+                      type="text"
+                      name="name"
+                      placeholder="Вашe имя"
+                      required=""
+                    />
+                    <input
+                      class="form__input form__input--tel"
+                      type="text"
+                      name="phone"
+                      placeholder="Телефон"
+                      required=""
+                      minlength="16"
+                    />
+                    <button class="form__button button">
+                      Получить бесплатную консультацию
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__container">
+          <a href="#" class="logo">
+            <img class="logo__img" src="src/image/logo_white.svg" alt="logo" />
+          </a>
+          <div class="footer__contacts">
+            <div class="footer__address">
+              <a
+                href="https://goo.gl/maps/ygLGbsdRjBirkpjj8"
+                class="footer__link"
+              >
+                <h4 class="footer__title">Наш адрес:</h4>
+                <p class="footer__text">690014, г. Владивосток,</p>
+                <p class="footer__text">ул. Гоголя, 11А</p>
+              </a>
+            </div>
+            <div class="footer__phone">
+              <h4 class="footer__title">Наш телефон:</h4>
+              <a href="" class="footer__link">
+                <p class="footer__text">+7 (966) 288-24-24</p>
+              </a>
+              <a href="" class="footer__link">
+                <p class="footer__text">+7 (423) 222-24-24</p>
+              </a>
+            </div>
+          </div>
+          <div class="footer__social">
+            <h4 class="footer__title"></h4>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="error">
+                  <img
+                    class="social__img"
+                    src="src/image/icon/vk_white.svg"
+                    alt="vkontakte"
+                  />
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="error">
+                  <img
+                    class="social__img"
+                    src="src/image/icon/insta_white.svg"
+                    alt="instagram"
+                  />
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="error">
+                  <img
+                    class="social__img"
+                    src="src/image/icon/telega_white.svg"
+                    alt="telegram"
+                  />
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="error">
+                  <img
+                    class="social__img"
+                    src="src/image/icon/ok_white.svg"
+                    alt="odnoklassniki"
+                  />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
+      </footer>
+    </div>
 
-    </main>
-
-    <footer class="footer"></footer>
-  </div>
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
