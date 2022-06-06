@@ -1,6 +1,6 @@
 .mortgage {
   position: relative;
-  background: url("/src/image/mortgage/background.jpg") 50% / cover no-repeat;
+  background: url("src/image/mortgage/background.jpg") 50% / cover no-repeat;
   overflow: hidden;
 
   &::before {
@@ -84,30 +84,30 @@
   // .banks__link--sber
 
   &__link--sber {
-    background-image: url("/src/image/icon/sber.svg");
+    background-image: url("src/image/icon/sber.svg");
   }
 
   // .banks__link--vtb
 
   &__link--vtb {
-    background-image: url("/src/image/icon/vtb.svg");
+    background-image: url("src/image/icon/vtb.svg");
   }
 
   // .banks__link--alfa
 
   &__link--alfa {
-    background-image: url("/src/image/icon/alfa.svg");
+    background-image: url("src/image/icon/alfa.svg");
   }
 
   // .banks__link--domrf
 
   &__link--domrf {
-    background-image: url("/src/image/icon/domrf.svg");
+    background-image: url("src/image/icon/domrf.svg");
   }
 
   // .banks__link--rshb
 
   &__link--rshb {
-    background-image: url("/src/image/icon/rshb.svg");
+    background-image: url("src/image/icon/rshb.svg");
   }
 }

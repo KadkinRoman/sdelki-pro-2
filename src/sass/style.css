@@ -563,7 +563,7 @@ h4 {
 .first-screen {
   height: 100vh;
   position: relative;
-  background: url("/src/image/first-screen/background.jpg") 50%/cover no-repeat;
+  background: url("src/image/first-screen/background.jpg") 50%/cover no-repeat;
   overflow: hidden;
 }
 .first-screen::before {
@@ -708,7 +708,7 @@ h4 {
 }
 
 .catalog-icon {
-  background-image: url("/src/image/icon/pdf.svg");
+  background-image: url("src/image/icon/pdf.svg");
   background-size: 30px 35px;
   background-repeat: no-repeat;
   padding: 18px 20px;
@@ -716,7 +716,7 @@ h4 {
 
 .mortgage {
   position: relative;
-  background: url("/src/image/mortgage/background.jpg") 50%/cover no-repeat;
+  background: url("src/image/mortgage/background.jpg") 50%/cover no-repeat;
   overflow: hidden;
 }
 .mortgage::before {
@@ -772,19 +772,19 @@ h4 {
   background-repeat: no-repeat;
 }
 .banks__link--sber {
-  background-image: url("/src/image/icon/sber.svg");
+  background-image: url("src/image/icon/sber.svg");
 }
 .banks__link--vtb {
-  background-image: url("/src/image/icon/vtb.svg");
+  background-image: url("src/image/icon/vtb.svg");
 }
 .banks__link--alfa {
-  background-image: url("/src/image/icon/alfa.svg");
+  background-image: url("src/image/icon/alfa.svg");
 }
 .banks__link--domrf {
-  background-image: url("/src/image/icon/domrf.svg");
+  background-image: url("src/image/icon/domrf.svg");
 }
 .banks__link--rshb {
-  background-image: url("/src/image/icon/rshb.svg");
+  background-image: url("src/image/icon/rshb.svg");
 }
 
 .video__container {
@@ -849,10 +849,10 @@ h4 {
   margin-right: 28px;
 }
 .form__input--tel {
-  background-image: url("/src/image/icon/tel.svg");
+  background-image: url("src/image/icon/tel.svg");
 }
 .form__input--name {
-  background-image: url("/src/image/icon/name.svg");
+  background-image: url("src/image/icon/name.svg");
 }
 .form__button {
   color: #fff;

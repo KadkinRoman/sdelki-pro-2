@@ -1,7 +1,7 @@
 .first-screen {
   height: 100vh;
   position: relative;
-  background: url("/src/image/first-screen/background.jpg") 50% / cover no-repeat;
+  background: url("src/image/first-screen/background.jpg") 50% / cover no-repeat;
   overflow: hidden;
 
   &::before {
