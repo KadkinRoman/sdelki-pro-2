@@ -4,5 +4,14 @@
 
   &__img {
     width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: $mobile-big-width) {
+    &__img {
+      width: 65%;
+    }
   }
 }

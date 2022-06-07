@@ -5,7 +5,7 @@
     padding: 90px 0 128px;
   }
 
-  &__container>*:not(:last-child) {
+  &__container > *:not(:last-child) {
     margin-bottom: 64px;
   }
 
@@ -19,7 +19,14 @@
 
   // .offers__content
 
-  &__content {}
+  &__content {
+  }
+
+  @media (max-width: $laptop-width) {
+    &__title {
+      font-size: 2rem;
+    }
+  }
 }
 
 .slider {
@@ -53,7 +60,24 @@
 
   // .slider__control
 
-  &__control {}
+  &__control {
+  }
+
+  @media (max-width: $laptop-width) {
+    &__item {
+      flex: 0 0 calc(50% - 1px);
+      max-width: calc(50% - 1px);
+    }
+
+
+  }
+
+  @media (max-width: 588px) {
+    &__item {
+      flex: 0 0 calc(100% - 1px);
+      max-width: calc(100% - 1px);
+    }
+  }
 }
 
 .card {
@@ -94,17 +118,24 @@
     left: 0;
     bottom: 4px;
     color: white;
-    padding: 4px;
+    padding: 6px 16px;
   }
 
   // .card__header-title
 
-  &__header-title {}
+  &__header-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 120%;
+  }
 
   // .card__header-subtitle
 
   &__header-subtitle {
     font-size: 1rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 120%;
   }
 
   // .card__footer
@@ -112,27 +143,40 @@
   &__footer {
     font-size: 1rem;
     color: $color-text;
-    padding: 4px 4px 8px 4px;
+    padding: 6px 16px;
   }
 
   // .card__footer-title
 
-  &__footer-title {}
+  &__footer-title {
+    font-size: 2rem;
+  }
 
   // .card__footer-price
 
   &__footer-price {
-    font-size: 1.6rem;
+    font-size: 2.8rem;
   }
 
   // .card__subtitle
 
-  &__subtitle {}
+  &__footer-subtitle {
+    font-size: 2rem;
+  }
+
+  
+  @media (max-width: $tablet-width) {
+    &__header-title {
+      font-size: 2.3rem;
+    }
+    
+    &__footer-subtitle {
+      font-size: 1.6rem;
+    }
+  }
 }
 
-
 .offers {
-
   // .offers__buttons
 
   &__buttons {
@@ -144,12 +188,33 @@
     font-weight: 700;
   }
 
-  &__buttons>*:not(:last-child) {
+  &__buttons > *:not(:last-child) {
     margin-right: 80px;
   }
 
   &__button {
     max-width: 287px;
+  }
+
+  @media (max-width: $tablet-width) {
+    &__buttons {
+      font-size: 1.6rem;
+    }
+  }
+
+  @media (max-width: 588px) {
+    &__buttons {
+      flex-direction: column;
+    }
+
+    &__buttons > *:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    &__button {
+      max-width: none;
+    }
   }
 }
 

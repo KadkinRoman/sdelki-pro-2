@@ -38,6 +38,7 @@
 
   &__title {
     flex: 2;
+    margin-right: 35px;
   }
 
   // .mortgage__button
@@ -45,13 +46,64 @@
   &__button {
     flex: 1;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 2.2rem;
     line-height: 127%;
   }
 
   // .mortgage__banks
 
   &__banks {
+  }
+
+  @media (max-width: $laptop-width) {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__title {
+      width: 818px;
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &__title {
+      font-size: 4rem;
+      width: 400px;
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    &__button {
+      font-size: 1.6rem;
+    }
+  }
+
+  @media (max-width: 491px) {
+    &__container > *:not(:last-child) {
+      margin-bottom: 80px;
+    }
+
+    &__container {
+      padding: 60px 0 90px;
+    }
+    &__title {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: $mobile-big-width) {
+    &__title {
+      font-size: 2.6rem;
+      width: 300px;
+    }
+
+    &__button {
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -109,5 +161,17 @@
 
   &__link--rshb {
     background-image: url("src/image/icon/rshb.svg");
+  }
+
+  @media (max-width: 491px) {
+    &__link {
+      background-position: left;
+    }
+  }
+  @media (max-width: $mobile-big-width) {
+    &__item {
+      width: 200px;
+      height: 40px;
+    }
   }
 }

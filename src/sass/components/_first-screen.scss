@@ -67,4 +67,20 @@
     transform: translateX(-50%) rotate(135deg);
   }
 
+  @media (max-width: $tablet-width) {
+    &__title {
+      font-size: 3.3rem;
+      line-height: 154%;
+    }
+
+    &__link {
+      font-size: 1.6rem;
+    }
+
+    &__link::after {
+      width: 20px;
+      height: 20px;
+      bottom: -26px;
+    }
+  }
 }

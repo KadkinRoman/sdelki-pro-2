@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
- html {
+html {
   line-height: 1.15; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -507,7 +507,7 @@ h2 {
 h3 {
   font-size: 3.3rem;
   line-height: 131%;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -520,6 +520,14 @@ h4 {
 
 .logo__img {
   width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 414px) {
+  .logo__img {
+    width: 65%;
+  }
 }
 
 .social {
@@ -536,6 +544,15 @@ h4 {
 .social__img {
   width: 100%;
   height: 100%;
+}
+@media (max-width: 414px) {
+  .social__item {
+    width: 3.9rem;
+    height: 3.9rem;
+  }
+  .social__item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .button {
@@ -616,6 +633,20 @@ h4 {
   border-left: 7px solid transparent;
   transform: translateX(-50%) rotate(135deg);
 }
+@media (max-width: 768px) {
+  .first-screen__title {
+    font-size: 3.3rem;
+    line-height: 154%;
+  }
+  .first-screen__link {
+    font-size: 1.6rem;
+  }
+  .first-screen__link::after {
+    width: 20px;
+    height: 20px;
+    bottom: -26px;
+  }
+}
 
 .offers__container {
   padding: 90px 0 128px;
@@ -628,6 +659,12 @@ h4 {
   text-align: center;
   text-transform: uppercase;
 }
+@media (max-width: 1024px) {
+  .offers__title {
+    font-size: 2rem;
+  }
+}
+
 .slider {
   margin: 0 auto;
 }
@@ -649,6 +686,19 @@ h4 {
   padding: 0 10px;
   margin-bottom: 20px;
 }
+@media (max-width: 1024px) {
+  .slider__item {
+    flex: 0 0 calc(50% - 1px);
+    max-width: calc(50% - 1px);
+  }
+}
+@media (max-width: 588px) {
+  .slider__item {
+    flex: 0 0 calc(100% - 1px);
+    max-width: calc(100% - 1px);
+  }
+}
+
 .card {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border-top-left-radius: 5px;
@@ -679,19 +729,42 @@ h4 {
   left: 0;
   bottom: 4px;
   color: white;
-  padding: 4px;
+  padding: 6px 16px;
+}
+.card__header-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 120%;
 }
 .card__header-subtitle {
   font-size: 1rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 120%;
 }
 .card__footer {
   font-size: 1rem;
   color: #6d6e71;
-  padding: 4px 4px 8px 4px;
+  padding: 6px 16px;
+}
+.card__footer-title {
+  font-size: 2rem;
 }
 .card__footer-price {
-  font-size: 1.6rem;
+  font-size: 2.8rem;
 }
+.card__footer-subtitle {
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .card__header-title {
+    font-size: 2.3rem;
+  }
+  .card__footer-subtitle {
+    font-size: 1.6rem;
+  }
+}
+
 .offers__buttons {
   display: flex;
   justify-content: center;
@@ -705,6 +778,23 @@ h4 {
 }
 .offers__button {
   max-width: 287px;
+}
+@media (max-width: 768px) {
+  .offers__buttons {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 588px) {
+  .offers__buttons {
+    flex-direction: column;
+  }
+  .offers__buttons > *:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .offers__button {
+    max-width: none;
+  }
 }
 
 .catalog-icon {
@@ -744,13 +834,58 @@ h4 {
 }
 .mortgage__title {
   flex: 2;
+  margin-right: 35px;
 }
 .mortgage__button {
   flex: 1;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 127%;
 }
+@media (max-width: 1024px) {
+  .mortgage__content {
+    flex-direction: column;
+  }
+  .mortgage__title {
+    width: 818px;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .mortgage__title {
+    font-size: 4rem;
+    width: 400px;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .mortgage__button {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 491px) {
+  .mortgage__container > *:not(:last-child) {
+    margin-bottom: 80px;
+  }
+  .mortgage__container {
+    padding: 60px 0 90px;
+  }
+  .mortgage__title {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 414px) {
+  .mortgage__title {
+    font-size: 2.6rem;
+    width: 300px;
+  }
+  .mortgage__button {
+    font-size: 1.2rem;
+  }
+}
+
 .banks {
   display: flex;
   align-items: center;
@@ -786,6 +921,17 @@ h4 {
 .banks__link--rshb {
   background-image: url("src/image/icon/rshb.svg");
 }
+@media (max-width: 491px) {
+  .banks__link {
+    background-position: left;
+  }
+}
+@media (max-width: 414px) {
+  .banks__item {
+    width: 200px;
+    height: 40px;
+  }
+}
 
 .video__container {
   padding: 64px 0 0;
@@ -811,6 +957,16 @@ h4 {
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
+@media (max-width: 768px) {
+  .video__title {
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  .video__content {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 .questions__container {
   padding: 64px 0;
@@ -830,6 +986,31 @@ h4 {
   font-weight: 400;
   font-size: 5.6rem;
   line-height: 120%;
+}
+@media (max-width: 768px) {
+  .questions__title {
+    font-size: 3.6rem;
+  }
+  .questions__subtitle {
+    font-size: 3.6rem;
+  }
+  .questions__content {
+    max-width: 465px;
+  }
+}
+@media (max-width: 460px) {
+  .questions__title {
+    font-size: 2.6rem;
+  }
+  .questions__subtitle {
+    font-size: 2.6rem;
+  }
+  .questions__content {
+    max-width: 315px;
+  }
+  .questions__content > *:not(:last-child) {
+    margin-bottom: 18px;
+  }
 }
 
 .form__content > *:not(:last-child) {
@@ -859,10 +1040,22 @@ h4 {
   text-transform: uppercase;
   border: none;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 2.1rem;
   line-height: 133%;
   text-align: left;
   max-width: 315px;
+}
+@media (max-width: 460px) {
+  .form__input {
+    font-size: 1.6rem;
+  }
+  .form__input:not(:last-child) {
+    margin-bottom: 18px;
+  }
+  .form__button {
+    font-size: 1.6rem;
+    max-width: 242px;
+  }
 }
 
 .wrapper {
@@ -892,6 +1085,9 @@ h4 {
   justify-content: space-between;
   align-items: center;
 }
+.header__logo {
+  margin-right: 20px;
+}
 .header__contacts {
   display: flex;
   align-items: center;
@@ -901,14 +1097,47 @@ h4 {
 .header__contacts > *:not(:last-child) {
   margin-right: 35px;
 }
+@media (max-width: 1024px) {
+  .header__contacts {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .header__contacts > *:not(:last-child) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .header__social {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 414px) {
+  .header__social {
+    margin-bottom: 10px;
+  }
+  .header .header__container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .header__logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .header__contacts {
+    align-items: flex-start;
+  }
+}
+
 .phone-header__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .phone-header__icon {
   background-image: url("src/image/icon/phone.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 5.6rem;
   height: 5.6rem;
   padding: 0 5px;
@@ -918,6 +1147,16 @@ h4 {
   line-height: 110%;
   font-weight: 800;
   color: #2a9142;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .phone-header__number {
+    font-size: 2rem;
+  }
+  .phone-header__icon {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
 }
 
 .main {
@@ -939,14 +1178,93 @@ h4 {
 .footer__container > *:not(:last-child) {
   margin-right: 123px;
 }
-.footer__contacts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+.footer__title {
+  margin-bottom: 10px;
 }
-.footer__contacts > *:not(:last-child) {
-  margin-right: 123px;
+@media (max-width: 1190px) {
+  .footer__container {
+    justify-content: start;
+    margin: 0 auto;
+    max-width: 750px;
+  }
+  .footer__container > *:not(:last-child) {
+    margin-right: 0;
+  }
+  .footer__logo {
+    order: 1;
+    flex: 1 1 50%;
+    max-width: 50%;
+    padding-right: 150px;
+    padding-bottom: 20px;
+  }
+  .footer__address {
+    order: 2;
+    flex: 1 1 50%;
+    max-width: 50%;
+    margin-bottom: 20px;
+  }
+  .footer__phone {
+    order: 4;
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+  .footer__social {
+    order: 3;
+    flex: 2 1 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .footer__container {
+    max-width: 450px;
+  }
+  .footer__logo {
+    order: 1;
+    flex: 1 1 50%;
+    max-width: 50%;
+    padding-right: 20px;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .footer__container {
+    max-width: 450px;
+  }
+  .footer__logo {
+    order: 1;
+    flex: 1 1 50%;
+    max-width: 50%;
+    padding-right: 20px;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 460px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 320px;
+    padding: 32px 0;
+  }
+  .footer__container > *:not(:nth-child(3)) {
+    margin-bottom: 20px;
+  }
+  .footer__logo {
+    order: 1;
+    max-width: 100%;
+    padding-right: 0;
+  }
+  .footer__address {
+    order: 3;
+    max-width: 100%;
+  }
+  .footer__phone {
+    order: 4;
+    max-width: 100%;
+  }
+  .footer__social {
+    order: 2;
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
